@@ -1,0 +1,172 @@
+/* 공통(COMMON) */
+.body__container {
+  font-family: "Single Day", cursive;
+  font-size: 20px;
+  font-weight: 400; /* 글씨두께 */
+  color: rgba(228, 148, 175);
+  background: ;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+
+
+
+
+*/
+/* 버튼 */
+.btn {
+  height: 40px;
+  background: rgba(255, 129, 97, 1);
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+}
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 87, 179, 0.23);
+}
+.btn.btn--primary {
+  border: 1px solid #65b836;
+  color: #fff;
+  background: #2b0d0b linear-gradient(#eb5e1c, #d66305);
+}
+/* 
+
+
+*/
+/* INPUT TEXT */
+.input--text {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  font-size: 16px;
+}
+.input--text:focus {
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px rgba(81, 167, 232, 0.5);
+}
+/* Vendor Prefix (브라우저 업체별 접두사) */
+.input--text::-webkit-input-placeholder {
+  color: #cacaca;
+}
+.input--text::-ms-input-placeholder {
+  color: #cacaca;
+}
+.input--text::-moz-input-placeholder {
+  color: #cacaca;
+}
+/* 
+
+
+*/
+/* Float CLEARFIX */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.float--left {
+  float: left;
+}
+.float--right {
+  float: right;
+}
+
+/* 
+
+
+
+ */
+/* 헤더 */
+header {
+  border: 1px solid rgb(31, 3, 10);
+  background: #fff;
+}
+header .inner {
+  max-width: 980px;
+  margin: 0 auto;
+  height: 100px;
+}
+header .menu-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .logo {
+  margin-right: 20px;
+}
+header .logo a {
+  background: url("/img/yg_logo.png");
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+header .main-menu {
+  display: flex;
+}
+header .main-menu li a {
+  padding: 20px;
+  display: block;
+  color: #3c4146;
+  font-size: 30px;
+}
+header .main-menu li a:hover {
+  color: #4078c0;
+}
+
+header .sign-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header .btn-group {
+  order: 2;
+  display: flex;
+}
+#search-form {
+  order: 1;
+}
+#search {
+  width: 100px;
+  height: 30px;
+  margin: 0 10px;
+}
+#search + [type="submit"] {
+  display: none;
+}
+header .sub-menu {
+  display: flex;
+  margin-right: 10px;
+}
+header .sub-menu li a {
+  display: block;
+  padding: 7px;
+  color: #5216a0;
+}
+header .sub-menu li a:hover {
+  color: #685d81;
+}
